@@ -2,14 +2,14 @@
 import "./App.css"
 import Sidebar from './sidebar';
 import Chat from './chat';
-import { useEffect ,useState} from 'react';
+// import { useEffect ,useState} from 'react';
 // import { Router } from "@material-ui/icons";
 // import { Switch } from "@ma/'terial-ui/core";
 import {BrowserRouter as Router, Switch,Route} from 'react-router-dom'
 import Login from "./login";
 import { useStateValue } from "./StateProvider";
 function App() {
-  const [{user},dispatch]=useStateValue()
+  const [{user}]=useStateValue()
   return (
     <div className="App">
     {!user?(

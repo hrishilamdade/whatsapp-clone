@@ -4,14 +4,14 @@ import ChatIcon from '@material-ui/icons/Chat';
 import {Avatar,IconButton} from "@material-ui/core"
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import DonutLargeIcon from '@material-ui/icons/DonutLarge'; 
-import {SearchOutlined, Unsubscribe} from '@material-ui/icons'
+import {SearchOutlined} from '@material-ui/icons'
 import SidebarChat from './sidebarChat'
 import db from './firebase'
 import { useStateValue } from './StateProvider';
 
 function Sidebar() {
     const [rooms,setRooms]=useState([])
-    const [{user},dispatch]=useStateValue(); 
+    const [{user}]=useStateValue(); 
 
     useEffect(()=>{
         const unsubscribe=db.collection('rooms').onSnapshot(snapshot => {

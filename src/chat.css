@@ -96,4 +96,23 @@
         flex-direction: column;
         flex: 0.85;
     }
+    .chatHeader{
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        border-bottom: 1px solid lightgray;
+    }
+    .chatHeader-info{
+        flex: 1;
+        padding-left: 20px;
+    }
+    .chatHeader-info > h3{
+        margin-bottom: 3px;
+        font-weight: 500;
+    }
+    .chatHeader-info>p{
+        font-size: 13px;
+        color: gray;
+    }
+    
 }
